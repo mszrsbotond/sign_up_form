@@ -1,0 +1,53 @@
+@font-face {
+    font-family: dmseriff;
+    src:url('dmseriftext-regular-webfont.woff2') format('woff2'),
+    url('dmseriftext-regular-webfont.woff') format('woff'); 
+}
+
+
+:root{
+    --gray: #c9c9c9;
+    --background: #181a1b
+}
+
+body{
+    font-family: dmseriff;
+    letter-spacing: 0.1rem;
+    display: flex;
+    background-color: var(--background);
+    color: white;
+}
+
+h1{
+    letter-spacing: 0.2rem;
+    font-size: 3rem;
+}
+
+h3{
+    font-weight: lighter;
+    font-size: 1rem;
+    color: var(--gray);
+}
+
+.learning-img {
+    height: 47rem;
+    width: auto;
+    margin-left: auto;
+    margin-right: 5rem;
+}
+
+form{
+    margin-left: 5rem;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 28rem;
+}
+
+input{
+    display: flex;
+    width: 500px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    background-color: var(--background);
+}
