@@ -7,57 +7,57 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <form action>
-
-            <h1>Ready to star your success story?</h1>
-
-            <h3>Sign up to our website and start learning on the world's biggest
-                online courses page</h3>
-
-            <div class="input-fields">
-                <div class="name">
-                    <p class="type-field">
-                        <label for="first-name">First Name</label>
-                        <input type="text" id="first-name" placeholder="John"
-                            required>
+        <div class="container">
+            <div class="form">
+                <form action>
+                    <h1>Ready to star your success story?</h1>
+                    <h3>Sign up to our website and start learning on the world's biggest
+                        online courses page</h3>
+                    <div class="input-fields">
+                        <div class="name">
+                            <p class="type-field">
+                                <label for="first-name">First Name</label>
+                                <input type="text" id="first-name" placeholder="John"
+                                    required>
+                            </p>
+                            <p class="type-field">
+                                <label for="last-name">Last Name</label>
+                                <input type="text" id="last-name" placeholder="Timothy"
+                                    required>
+                            </p>
+                        </div>
+                        <p class="type-field">
+                            <label for="email">Email</label>
+                            <input type="email" id="email"
+                                placeholder="youremail@gmail.com"
+                                required>
+                        </p>
+                        <p class="type-field">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" placeholder="36306736483" pattern="^36[0-9]{9}$"
+                                required>
+                        </p>
+                        <p class="type-field password">
+                            <label for="password">Password</label>
+                            <input type="password" name="password" id="password"
+                                required>
+                        </p>
+                        <p class="show-password">
+                            <input type="checkbox" id="show-password">
+                            <label for="show-password">Show Password</label>
+                        </p>
+                    </div>
+                    <p class="agree">
+                        <input type="checkbox" id="agree" required>
+                        <label for="agree">I agree to the <span>Terms & Coditions</span></label>
                     </p>
-                    <p class="type-field">
-                        <label for="last-name">Last Name</label>
-                        <input type="text" id="last-name" placeholder="Timothy"
-                            required>
+                    <p>
+                        <input type="submit" class="submit">
                     </p>
-                </div>
-                <p class="type-field">
-                    <label for="email">Email</label>
-                    <input type="email" id="email"
-                        placeholder="youremail@gmail.com"  
-                        required>
-                </p>
-                <p class="type-field">
-                    <label for="phone">Phone Number</label>
-                    <input type="tel" id="phone" placeholder="36306736483" pattern="^36[0-9]{9}$"
-                        required>
-                </p>
-                <p class="type-field password">
-                    <label for="password">Password</label>
-                    <input type="password" name="password" id="password"
-                        required>
-                </p>
-                <p class="show-password">
-                    <input type="checkbox" id="show-password">
-                    <label for="show-password">Show Password</label>
-                </p>
+                </form>
             </div>
-            <p class="agree">
-                <input type="checkbox" id="agree" required>
-                <label for="agree">I agree to the <span>Terms & Coditions</span></label>
-            </p>
-            <p>
-                <input type="submit" class="submit">
-            </p>
-        </form>
-
-        <img src="elearning.png" alt="e-learning" class="learning-img">
+            <div class="img-container"><img src="elearning.png" alt="e-learning" class="learning-img"></div>
+        </div>
 
         <script src="script.js" defer></script>
 
