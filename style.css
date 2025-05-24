@@ -7,8 +7,10 @@
 
 :root{
     --gray: #c9c9c9;
+    --underline-blue: #59a7c5;
     --background: #181a1b
 }
+
 
 body{
     font-family: dmseriff;
@@ -20,7 +22,8 @@ body{
 
 h1{
     letter-spacing: 0.2rem;
-    font-size: 3rem;
+    font-size: 2.7rem;
+    margin-bottom: 0.5rem;
 }
 
 h3{
@@ -37,17 +40,77 @@ h3{
 }
 
 form{
-    margin-left: 5rem;
+    margin-left: 7rem;
     margin-top: auto;
     margin-bottom: auto;
     width: 28rem;
 }
 
-input{
+label{
+    font-weight: lighter;
+    font-size: 1rem;
+    color: var(--gray);
+}
+
+span{
+    color: var(--underline-blue);
+}
+
+/* input-fields */
+.input-fields{
+    margin-top: 2rem;
+}
+
+/* type-field */
+.type-field{
     display: flex;
-    width: 500px;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+.type-field:focus-within label{
+    color: var(--underline-blue);
+    font-weight: bolder;
+}
+
+/* type-input */
+.type-input{
+    font-family: dmseriff;
+    font-size: 1.3rem;
+    color: white;
+    width: 30rem;
     border-top: 0;
     border-left: 0;
     border-right: 0;
     background-color: var(--background);
+}
+.type-input:focus{
+    outline: none;
+    border-bottom: 0.2rem solid var(--underline-blue);
+}
+
+/* show-password */
+.show-password:hover{
+   cursor: pointer; 
+}
+
+/* agree */
+.agree:hover{
+   cursor: pointer; 
+}
+
+
+/* submit */
+.submit{
+    all: unset;
+    color: white;
+    background-color: var(--underline-blue);
+    padding: 0.7rem 3rem;
+    border-radius: 1rem;
+    margin-top: 1.5rem;
+    transition: transform 0.3s;
+
+}
+.submit:hover{
+    cursor: pointer;
+    transform: translateY(-1rem);
 }

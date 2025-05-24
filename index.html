@@ -14,45 +14,50 @@
             <h3>Sign up to our website and start learning on the world's biggest
                 online courses page</h3>
 
+            <div class="input-fields">
+                <p class="type-field">
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name" placeholder="John" class="type-input"
+                        required>
+                </p>
+                <p class="type-field">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name" placeholder="Timothy" class="type-input"
+                        required>
+                </p>
+                <p class="type-field">
+                    <label for="email">Email</label>
+                    <input type="email" id="email"
+                        placeholder="youremail@gmail.com" class="type-input"
+                        required>
+                </p>
+                <p class="type-field">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" placeholder="36306736483" class="type-input" pattern=""
+                        required>
+                </p>
+                <p class="type-field">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" class="type-input"
+                        required>
+                </p>
+                <p>
+                    <input type="checkbox" id="show-password" class="show-password">
+                    <label for="show-password">Show Password</label>
+                </p>
+            </div>
             <p>
-                <label for="first-name">First Name</label>
-                <input type="text" id="first-name" placeholder="John" required>
+                <input type="checkbox" id="agree" class="agree" required>
+                <label for="agree">I agree to the <span>Terms & Coditions</span></label>
             </p>
-
             <p>
-                <label for="last-name">Last Name</label>
-                <input type="text" id="last-name" placeholder="Timothy"
-                    required>
-            </p>
-
-            <p>
-                <label for="email">Email</label>
-                <input type="email" id="email" placeholder="youremail@gmail.com"
-                    required>
-            </p>
-
-            <p>
-                <label for="phone">Phone Number</label>
-                <input type="tel" id="phone" placeholder="36306736483" required>
-            </p>
-
-            <p>
-                <label for="password">Password</label>
-                <input type="password" name="password" id="password" required>
-            </p>
-
-            <p>
-                <input type="checkbox" id="show-password">
-                <label for="show-password">Show Password</label>
-            </p>
-
-            <p>
-                <input type="checkbox" id="agree" required>
-                <label for="agree">I agree to the Terms & Coditions</label>
+                <input type="submit" class="submit">
             </p>
         </form>
 
         <img src="elearning.png" alt="e-learning" class="learning-img">
+
+        <script src="script.js"></script>
 
     </body>
 </html>
