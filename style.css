@@ -1,18 +1,18 @@
 @font-face {
     font-family: dmseriff;
-    src:url('dmseriftext-regular-webfont.woff2') format('woff2'),
-    url('dmseriftext-regular-webfont.woff') format('woff'); 
+    src: url('dmseriftext-regular-webfont.woff2') format('woff2'),
+        url('dmseriftext-regular-webfont.woff') format('woff');
 }
 
 
-:root{
+:root {
     --gray: #c9c9c9;
     --underline-blue: #59a7c5;
     --background: #181a1b
 }
 
 
-body{
+body {
     font-family: dmseriff;
     letter-spacing: 0.1rem;
     display: flex;
@@ -20,16 +20,18 @@ body{
     color: white;
 }
 
-h1{
+h1 {
     letter-spacing: 0.2rem;
     font-size: 2.7rem;
-    margin-bottom: 0.5rem;
+    margin: 0rem;
+    margin-top: 2rem;
 }
 
-h3{
+h3 {
     font-weight: lighter;
     font-size: 1rem;
     color: var(--gray);
+    margin: 0rem;
 }
 
 .learning-img {
@@ -39,41 +41,48 @@ h3{
     margin-right: 5rem;
 }
 
-form{
+form {
     margin-left: 7rem;
     margin-top: auto;
     margin-bottom: auto;
     width: 28rem;
 }
 
-label{
+label {
     font-weight: lighter;
     font-size: 1rem;
     color: var(--gray);
 }
 
-span{
+span {
     color: var(--underline-blue);
 }
 
 /* input-fields */
-.input-fields{
-    margin-top: 2rem;
-}
-
-/* type-field */
-.type-field{
+.input-fields {
+    margin-top: 0.2rem;
     display: flex;
     flex-direction: column;
-    gap: 0.7rem;
 }
-.type-field:focus-within label{
+
+
+/* type-field */
+.type-field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.type-field label {
+    transition: color 0.7s;
+}
+
+.type-field:focus-within label {
     color: var(--underline-blue);
     font-weight: bolder;
 }
 
-/* type-input */
-.type-input{
+.type-field input {
     font-family: dmseriff;
     font-size: 1.3rem;
     color: white;
@@ -81,26 +90,41 @@ span{
     border-top: 0;
     border-left: 0;
     border-right: 0;
+    border-bottom: 0.1rem solid white;
     background-color: var(--background);
+    transition: border-bottom 0.7s;
 }
-.type-input:focus{
+
+.type-field:focus-within input{
     outline: none;
-    border-bottom: 0.2rem solid var(--underline-blue);
+    border-bottom: 0.12rem solid var(--underline-blue);
 }
+
+/* name */
+.name{
+    display: flex;
+}
+
+/* password */
+.type-field.password{
+    margin-bottom: 0rem;
+}
+
 
 /* show-password */
-.show-password:hover{
-   cursor: pointer; 
+.show-password:hover {
+    cursor: pointer;
 }
 
+
 /* agree */
-.agree:hover{
-   cursor: pointer; 
+.agree:hover {
+    cursor: pointer;
 }
 
 
 /* submit */
-.submit{
+.submit {
     all: unset;
     color: white;
     background-color: var(--underline-blue);
@@ -110,7 +134,8 @@ span{
     transition: transform 0.3s;
 
 }
-.submit:hover{
+
+.submit:hover {
     cursor: pointer;
     transform: translateY(-1rem);
 }
