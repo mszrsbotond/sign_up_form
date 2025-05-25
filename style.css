@@ -6,7 +6,7 @@
 
 @media (max-width: 600px){
 :root {
-    --gray: #c9c9c9;
+    --gray: 201,201,201;
     --underline-blue: #59a7c5;
     --background: #181a1b
 }
@@ -360,16 +360,13 @@ span {
     cursor: pointer;
 }
 
-
-
-
 /* submit */
 .submit {
     all: unset;
     font-size: 1.3rem;
     display: block;
     color: white;
-    background-color: #04018a;
+    background-color: rgba(201, 201, 201, 0.1);
     padding: 0.7rem 3rem;
     border-radius: 1rem;
     margin-top: 2rem;
@@ -381,11 +378,16 @@ span {
     animation-duration: 1s;
 }
 
+
 .submit:hover {
     cursor: pointer;
     transform: translateY(-0.3rem);
-    background-color: var(--underline-blue);
     color: black;
     font-weight: bolder;
 }
+}
+
+.submit:active{
+    transform: translateY(0.1rem);
+    transform: translateX(0.09rem);
 }
