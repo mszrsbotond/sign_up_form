@@ -22,12 +22,15 @@ formElements.forEach(formElement => {
     formElement.addEventListener("input", () => {
         if (formBuiltIn.checkValidity()) {
             submit.style["background-color"] = "var(--underline-blue)"
+            submit.style["color"] = "#2e2e2e"
+            submit.classList.add("submit-hover")
+            submit.classList.add("submit-active")
         }
-        else{
+        else {
             submit.style["background-color"] = "rgba(201, 201, 201, 0.1)"
             submit.style["color"] = "gray"
+            submit.classList.remove("submit-hover")
+            submit.classList.remove("submit-active")
         }
     })
 })
-
-console.log(formElements)

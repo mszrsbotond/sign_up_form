@@ -373,13 +373,10 @@ span {
     transition: transform 0.3s, background-color 0.5s, color 0.5s, font-weight 0.5s;
     margin-left: auto;
     margin-right: auto;
-
-    animation-name: slideinleft;
-    animation-duration: 1s;
 }
 
 
-.submit:hover {
+.submit-hover:hover {
     cursor: pointer;
     transform: translateY(-0.3rem);
     color: black;
@@ -387,7 +384,7 @@ span {
 }
 }
 
-.submit:active{
+.submit-active:active{
     transform: translateY(0.1rem);
     transform: translateX(0.09rem);
 }
