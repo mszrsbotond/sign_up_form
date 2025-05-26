@@ -25,6 +25,7 @@ formElements.forEach(formElement => {
         }
         else{
             submit.style["background-color"] = "rgba(201, 201, 201, 0.1)"
+            submit.style["color"] = "gray"
         }
     })
 })

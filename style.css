@@ -365,7 +365,7 @@ span {
     all: unset;
     font-size: 1.3rem;
     display: block;
-    color: white;
+    color: gray;
     background-color: rgba(201, 201, 201, 0.1);
     padding: 0.7rem 3rem;
     border-radius: 1rem;
